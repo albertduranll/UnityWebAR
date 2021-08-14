@@ -35,7 +35,7 @@
       let enterARButton = document.getElementById('enterar');
       let enterVRButton = document.getElementById('entervr');
 
-      enterARButton.disabled = !event.detail.supported;
+      
       document.dispatchEvent(new CustomEvent('toggleAR', {}));
       
       document.addEventListener('onARSupportedCheck', function (event) {
